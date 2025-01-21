@@ -8,7 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
-  background-color: #f5f5f5;
+  background-color: snow;
   padding: 16px;
 }
 
@@ -49,15 +49,13 @@ body {
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
-  /*transition: background-color 0.3s ease;*/
 }
 
 #new-player-form button:hover {
   background-color: #2c3e50;
-  
 }
 
-/* Player grid container */
+/* Player container styles */
 .player-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -77,16 +75,17 @@ body {
 }
 
 .player-card:hover {
-  transform: translateY(-20px); /*moves the player card up when a user hovers over an individual card - enhances interactivity*/
+  transform: translateY(-20px); /* moves the player card up when a user hovers over an individual card */
 }
 
-/* Image container to maintain aspect ratio */
+/* Image container (aspect ratio) styles */
 .player-card .image-container {
   position: relative;
   padding-top: 75%; /* 4:3 aspect ratio */
   overflow: hidden;
 }
 
+/* Player card image styles */
 .player-card img {
   position: absolute;
   top: 0;
@@ -100,6 +99,7 @@ body {
   transform: scale(1.5); /*enlarges the dog image when a user hovers over it*/
 }
 
+/* Player card heading styles */
 .player-card h3 {
   padding: 16px;
   margin: 0;
@@ -109,6 +109,7 @@ body {
   text-align: center;
 }
 
+/* Player card body paragraph styles */
 .player-card p {
   padding: 0 16px;
   color: lightslategray;
@@ -116,6 +117,7 @@ body {
   text-align: center;
 }
 
+/* Player card button container styles */
 .player-card .button-container {
   padding: 16px;
   margin-top: auto;
@@ -124,6 +126,7 @@ body {
   justify-content: center;
 }
 
+/* Player card button styles */
 .player-card button {
   padding: 8px 16px;
   border: none;
@@ -147,7 +150,7 @@ body {
   background-color: #2c3e50;
 }
 
-/* Single player view styles */
+/* Single player card styles */
 .single-player-card {
   background: white;
   max-width: 600px;
@@ -157,6 +160,7 @@ body {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Single player card image styles */
 .single-player-card img {
   width: 100%;
   height: 400px;
@@ -165,6 +169,7 @@ body {
   margin-bottom: 24px;
 }
 
+/* Single player header styles */
 .single-player-card h3 {
   color: darkslategray;
   font-family: Arial, Helvetica, sans-serif;
@@ -172,12 +177,14 @@ body {
   margin-bottom: 16px;
 }
 
+/* Single player body text styles */
 .single-player-card p {
   color: darkslategray;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 8px;
 }
 
+/* Single player card button styles */
 .single-player-card button {
   background-color: #85929e;
   color: white;
@@ -196,33 +203,6 @@ body {
 
 /* Select dropdowns styling */
 select {
-  /* Other styles remain the same */
   background-image: none;
-  /* Add a simple triangle with Unicode */
   padding-right: 24px;
-}
-
-select::after {
-  content: '▼';
-  position: absolute;
-  right: 10px;
-}
-
-/* Option 2: Using a simpler arrow with borders */
-select {
-  /* Other styles remain the same */
-  background-image: none;
-  /* Add a simple triangle with borders */
-  padding-right: 24px;
-}
-
-select::after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #333;
 }

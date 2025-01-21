@@ -79,7 +79,7 @@ describe("addNewPlayer", () => {
     expect(addedPlayer).toHaveProperty("name", newPlayerData.name);
     expect(addedPlayer).toHaveProperty("breed", newPlayerData.breed);
     expect(addedPlayer).toHaveProperty("status", newPlayerData.status);
-    expect(addedPlayer).toHaveProperty("id");
+    expect(addedPlayer).toHaveProperty("id", newPlayerData.id);
   }); //checks the player's properties
 
   test("new player has generated ID", async () => {
@@ -117,8 +117,9 @@ describe("removePlayer", () => {
       .toThrow();
   }); //verifies that the 'removed' player is actually removed
 
+  const nonExistingPlayer = 99999;
   test("throws error when removing non-existent player", async () => {
-    await expect(removePlayer(99999))
+    await expect(removePlayer(nonExistingPlayer))
       .rejects
       .toThrow();
   });

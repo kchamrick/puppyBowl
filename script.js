@@ -58,7 +58,7 @@ const addNewPlayer = async (playerObj) => {
     console.error("Oops, something went wrong with adding that player!", err);
     return null;
   }
-};
+}; //returns an error message if adding a new player is unsuccessful
 
 /**
  * Removes a player from the roster via the API.
