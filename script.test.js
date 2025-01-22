@@ -1,6 +1,3 @@
-//For each TO DO, follow this pattern: 1. Set up test data, 2. Run tests, 3. Make assertions about results, and 4. Test success and error scenarios for each.
-//From the assignment instruction: In script.test.js, use 'describe' to add test specs for fetchSinglePlayer and addNewPlayer. Each 'describe' should contain at least one test. Optional: write tests for removePlayer. 
-
 const { //variables for which we define functions for this workshop
   fetchAllPlayers,
   fetchSinglePlayer,
